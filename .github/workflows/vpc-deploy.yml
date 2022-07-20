@@ -12,10 +12,10 @@ jobs:
       id-token: write
     steps:
       - name: Clone our repository
-        uses:actions/checkout@v3
+        uses: actions/checkout@v3
 
-      - name:AWS Authetication
-        uses:aws-actions/configure-aws-credentials@v1
+      - name: AWS Authetication
+        uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assue: arn:aws:iam::183345771765:role/github-actions-oidc
           aws-region: eu-west-1
